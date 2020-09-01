@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import logo from './logo.svg';
 import './App.css';
-// import SearchForm from "./SearchForm";
+//import SearchForm from "./SearchForm";
 import Directory from './components/Directory';
 import API from "./utils/API";
 

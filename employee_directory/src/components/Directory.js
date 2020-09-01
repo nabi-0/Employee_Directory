@@ -1,4 +1,7 @@
 import React from "react";
+// import List from "./List";
+// import Search from "./Search"
+// import api from "../utils/api";
 
 function Directory(props) {
     return (
