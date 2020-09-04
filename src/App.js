@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import logo from './logo.svg';
 import './App.css';
 import SearchForm from "./components/SearchForm";
 import Directory from './components/Directory';
 import API from "./utils/API";
 
-
+//SIDE NOTE...DON'T USE CLASSES ANYMORE, THEY'RE GOOD BUT USE FUNCTIONS WITH HOOKS!!!!
 class App extends Component {
   state = {
     search: "",
@@ -18,34 +17,26 @@ class App extends Component {
       .catch(err => console.log(err));
   };
 
+  //repackaging 
+  setsearch = (value) => {
+    this.setState({ search: value })
+  }
+
   render() {
     return (
       <>
-        <Directory
-          employee="Josh"
-        />
-        <Directory
-          employee="Natalie"
-        />
         <div className="App">
-          <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <p>
-              Edit <code>src/App.js</code> and save to reload.
-        </p>
-            <a
-              className="App-link"
-              href="https://reactjs.org"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn React
-        </a>
-          </header>
+          <SearchForm
+            search={this.state.search}
+            setsearch={this.setsearch} />
         </div>
-        <div className="App">
-          <SearchForm />
-        </div>
+        {/* <Directory employee={employee} useState class uses this.state
+         />; */}
+        <Directory
+          employee={this.state.employee}
+          search={this.state.search}
+        />
+
       </>
     );
   }
