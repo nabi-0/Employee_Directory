@@ -26,11 +26,11 @@ To see more stuff like this check out my Portfolio. There is a link in my GitHub
 
 No installation needed. Just follow the link:
 
-* https://budget-tracker-roku.herokuapp.com/ 
+* https://nabi-0.github.io/Employee_Directory/
 
 ## Usage
 
-Once the user loads the page he/she will be given the option to add funds or subtract funds into the account. The user will have to give the transaction a name and amout. The user will be able to track their withdrawals and deposits with or without a data/internet connection.The account balance will be accurate and reloaded once connected to data.internet.
+Once the user loads the page, a table of emplyee will render. The user will be giveb a table of random users where they will be able to see them in alphabetical order. They will also be given the option to search by the employees first name.
 
 
 ## Credits
