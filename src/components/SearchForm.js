@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 //import Directory from "./Directory";
 
 function SearchForm(props) {
@@ -13,7 +12,7 @@ function SearchForm(props) {
                         className="form-input"
                         type="text"
                         placeholder="Search"
-                        // created an onChange event to handle the setSearch, then setSearch passes the value to search
+                        // onChange will handle setSearch. setSearch passes the value to search
                         onChange={(e) => props.setsearch(e.target.value)}
                     ></input>
                 </div>
